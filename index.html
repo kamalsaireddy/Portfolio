@@ -1,0 +1,1012 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0b0b0c" />
+<title>Kamalsai Reddy — HR, quietly done well.</title>
+<meta name="description" content="Kamalsai Reddy — Associate HR Executive at Techdome. Full-cycle talent acquisition, people operations, and engagement for high-growth tech teams." />
+<meta property="og:title" content="Kamalsai Reddy — HR, quietly done well." />
+<meta property="og:description" content="Full-cycle talent acquisition, people operations, and engagement for high-growth tech teams." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+/* =========================================================
+   TOKENS
+   Minimal palette. One accent. Generous air.
+   ========================================================= */
+:root{
+  --bg: #0b0b0c;
+  --bg-soft:#111113;
+  --fg: #eceae5;
+  --fg-dim:#9a988f;
+  --fg-faint:#5a5952;
+  --line: rgba(236,234,229,.08);
+  --line-strong: rgba(236,234,229,.16);
+  --accent:#d4a574;           /* warm sand, a single restrained accent */
+  --serif:'Fraunces', 'Times New Roman', serif;
+  --sans:'Inter', system-ui, sans-serif;
+  --mono:'JetBrains Mono', monospace;
+  --max: 1120px;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{background:var(--bg);color:var(--fg);overflow-x:hidden}
+body{
+  font-family:var(--sans);
+  font-weight:400;font-size:16px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  letter-spacing:-0.005em;
+}
+::selection{background:var(--accent);color:var(--bg)}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+img{max-width:100%;display:block}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(236,234,229,.06);border-radius:999px}
+::-webkit-scrollbar-thumb:hover{background:rgba(236,234,229,.14)}
+
+/* =========================================================
+   LAYOUT
+   ========================================================= */
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px;position:relative;z-index:2}
+section{padding:120px 0;position:relative}
+section + section{border-top:1px solid var(--line)}
+
+/* =========================================================
+   NAV
+   ========================================================= */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  padding:22px 32px;display:flex;align-items:center;justify-content:space-between;
+  background:linear-gradient(180deg, rgba(11,11,12,.85), rgba(11,11,12,0));
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+}
+.nav .mark{font-family:var(--serif);font-style:italic;font-size:22px;font-weight:300;letter-spacing:-.01em}
+.nav .mark .dot{color:var(--accent)}
+.nav .links{display:flex;gap:28px;font-size:13px;color:var(--fg-dim)}
+.nav .links a{transition:color .3s var(--ease)}
+.nav .links a:hover,.nav .links a.active{color:var(--fg)}
+.nav .contact-link{font-size:13px;color:var(--fg-dim);display:inline-flex;align-items:center;gap:8px;transition:color .3s}
+.nav .contact-link:hover{color:var(--fg)}
+.nav .contact-link .dot-avail{width:6px;height:6px;border-radius:50%;background:#b8d89b}
+@media (max-width:780px){
+  .nav .links{display:none}
+}
+
+/* Scroll progress, hair-thin */
+.prog{position:fixed;top:0;left:0;right:0;height:1px;z-index:60;background:transparent}
+.prog i{display:block;height:100%;width:0;background:var(--fg);opacity:.5;transition:width .1s linear}
+
+/* =========================================================
+   3D OBJECT (single, subtle)
+   ========================================================= */
+#stage{
+  position:fixed;right:0;top:0;width:55vw;height:100vh;z-index:1;pointer-events:none;
+  mask-image:radial-gradient(60% 80% at 60% 50%, #000 40%, transparent 90%);
+  opacity:.9;
+}
+@media (max-width:900px){
+  #stage{width:100vw;height:60vh;opacity:.6;mask-image:radial-gradient(70% 70% at 50% 40%, #000 30%, transparent 85%)}
+}
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+.eyebrow{
+  font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--fg-faint);display:inline-flex;align-items:center;gap:12px;
+}
+.eyebrow::before{content:"—";color:var(--accent)}
+h1,h2,h3{font-weight:400;letter-spacing:-0.02em;line-height:1.05}
+h1{font-family:var(--serif);font-weight:300;font-size:clamp(44px,7.4vw,104px);letter-spacing:-0.03em;line-height:1}
+h2{font-family:var(--serif);font-weight:300;font-size:clamp(32px,4.6vw,56px);letter-spacing:-0.02em}
+h3{font-family:var(--sans);font-weight:500;font-size:clamp(18px,1.7vw,22px);letter-spacing:-0.01em}
+.italic{font-style:italic;font-weight:300}
+.serif{font-family:var(--serif);font-weight:300}
+em{font-family:var(--serif);font-style:italic;font-weight:300;color:var(--fg)}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:120px;padding-bottom:80px;position:relative}
+.hero .wrap{width:100%}
+.hero .avail{display:inline-flex;align-items:center;gap:10px;font-size:12px;color:var(--fg-dim);margin-bottom:48px}
+.hero .avail .pulse{width:7px;height:7px;border-radius:50%;background:#b8d89b;position:relative}
+.hero .avail .pulse::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:1px solid #b8d89b;opacity:.5;animation:pulse 2s infinite}
+@keyframes pulse{0%{transform:scale(.6);opacity:.6}100%{transform:scale(1.6);opacity:0}}
+.hero h1 .line{display:block;overflow:hidden}
+.hero h1 .line > span{display:inline-block;will-change:transform}
+.hero .sub{
+  margin-top:36px;max-width:480px;font-size:17px;line-height:1.6;color:var(--fg-dim);
+}
+.hero .sub strong{color:var(--fg);font-weight:500}
+.hero .footer{
+  position:absolute;left:32px;right:32px;bottom:40px;
+  display:flex;justify-content:space-between;align-items:flex-end;gap:20px;
+  font-size:12px;color:var(--fg-faint);font-family:var(--mono);letter-spacing:.1em;text-transform:uppercase;
+}
+.hero .footer .now{display:flex;flex-direction:column;gap:4px}
+.hero .footer .now b{color:var(--fg-dim);font-family:var(--sans);font-weight:400;letter-spacing:normal;text-transform:none;font-size:14px}
+.hero .footer .scroll{display:inline-flex;align-items:center;gap:10px}
+.hero .footer .scroll i{display:inline-block;width:14px;height:1px;background:var(--fg-dim)}
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+.about-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:60px;align-items:start}
+.about-label h2{margin-top:8px}
+.about-body{color:var(--fg-dim);font-size:17px;line-height:1.7;max-width:520px}
+.about-body p + p{margin-top:20px}
+.about-body .pull{color:var(--fg);font-family:var(--serif);font-size:22px;font-style:italic;font-weight:300;line-height:1.4;padding:8px 0 8px 18px;border-left:1px solid var(--accent);margin:24px 0}
+@media (max-width:820px){.about-grid{grid-template-columns:1fr;gap:24px}}
+
+/* =========================================================
+   EXPERIENCE (progressive disclosure)
+   ========================================================= */
+.xp-list{margin-top:40px}
+.xp-row{
+  display:grid;grid-template-columns:180px 1fr auto;gap:40px;align-items:baseline;
+  padding:26px 0;border-top:1px solid var(--line);
+  cursor:pointer;transition:background .3s var(--ease);
+}
+.xp-row:hover{background:linear-gradient(90deg, rgba(212,165,116,.04), transparent)}
+.xp-row .when{font-family:var(--mono);font-size:12px;color:var(--fg-faint);letter-spacing:.08em;text-transform:uppercase}
+.xp-row .title{display:flex;flex-direction:column;gap:4px}
+.xp-row h3{font-weight:500;font-size:20px;color:var(--fg)}
+.xp-row .co{color:var(--fg-dim);font-size:14px}
+.xp-row .co em{color:var(--fg-dim)}
+.xp-row .more{color:var(--fg-dim);font-size:20px;transition:transform .4s var(--ease), color .3s}
+.xp-row.open .more{transform:rotate(45deg);color:var(--accent)}
+.xp-row .details{
+  grid-column:1/-1;max-height:0;overflow:hidden;transition:max-height .6s var(--ease), margin-top .4s var(--ease);
+  color:var(--fg-dim);font-size:15px;line-height:1.7;
+}
+.xp-row.open .details{max-height:800px;margin-top:18px}
+.xp-row .details ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:10px 40px;padding-left:0}
+.xp-row .details li{position:relative;padding-left:18px}
+.xp-row .details li::before{content:"·";color:var(--accent);position:absolute;left:4px;top:0;font-weight:700}
+@media (max-width:780px){
+  .xp-row{grid-template-columns:1fr auto;gap:16px}
+  .xp-row .when{grid-column:1/-1;order:-1;font-size:11px}
+  .xp-row .details ul{grid-template-columns:1fr}
+}
+
+/* =========================================================
+   WORK (card grid → modal detail)
+   ========================================================= */
+.work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);margin-top:40px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.work-card{
+  background:var(--bg);padding:40px 36px;min-height:220px;
+  display:flex;flex-direction:column;justify-content:space-between;gap:24px;
+  position:relative;cursor:pointer;transition:background .4s var(--ease);
+}
+.work-card:hover{background:var(--bg-soft)}
+.work-card .num{font-family:var(--mono);font-size:12px;color:var(--fg-faint);letter-spacing:.08em}
+.work-card h3{font-family:var(--serif);font-weight:300;font-size:clamp(22px,2.2vw,28px);line-height:1.2;color:var(--fg);max-width:380px}
+.work-card .hint{display:flex;align-items:center;justify-content:space-between;color:var(--fg-dim);font-size:13px;font-family:var(--mono);letter-spacing:.06em;text-transform:uppercase}
+.work-card .hint .arrow{display:inline-block;transition:transform .4s var(--ease);color:var(--fg-dim)}
+.work-card:hover .hint .arrow{transform:translate(6px,-6px);color:var(--accent)}
+@media (max-width:780px){.work-grid{grid-template-columns:1fr}}
+
+/* Modal */
+.modal{
+  position:fixed;inset:0;z-index:90;display:none;align-items:center;justify-content:center;padding:30px;
+  background:rgba(11,11,12,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  opacity:0;transition:opacity .35s var(--ease);
+}
+.modal.open{display:flex;opacity:1}
+.modal .sheet{
+  width:min(720px,100%);max-height:86vh;overflow:auto;
+  background:var(--bg-soft);border:1px solid var(--line);border-radius:4px;
+  padding:48px;position:relative;
+  transform:translateY(20px);transition:transform .5s var(--ease);
+}
+.modal.open .sheet{transform:none}
+.modal .close{position:absolute;top:18px;right:18px;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;color:var(--fg-dim);transition:color .3s,background .3s}
+.modal .close:hover{color:var(--fg);background:var(--line)}
+.modal h3{font-family:var(--serif);font-weight:300;font-size:clamp(28px,3.5vw,40px);line-height:1.15;margin:8px 0 24px}
+.modal .eyebrow{margin-bottom:8px}
+.modal p{color:var(--fg-dim);font-size:16px;line-height:1.7;margin-bottom:16px}
+.modal .metrics{display:flex;flex-wrap:wrap;gap:24px 40px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:28px 0}
+.modal .metrics .m{display:flex;flex-direction:column;gap:4px}
+.modal .metrics .m .n{font-family:var(--serif);font-weight:300;font-size:28px;color:var(--fg)}
+.modal .metrics .m .l{font-family:var(--mono);font-size:11px;color:var(--fg-faint);letter-spacing:.1em;text-transform:uppercase}
+.modal .tools{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.modal .tools span{font-size:12px;color:var(--fg-dim);border:1px solid var(--line);padding:5px 10px;border-radius:999px}
+
+/* =========================================================
+   SKILLS — simple grouped
+   ========================================================= */
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:40px}
+.skill-col h4{font-family:var(--mono);font-size:11px;color:var(--fg-faint);letter-spacing:.22em;text-transform:uppercase;margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.skill-col ul{list-style:none}
+.skill-col li{padding:9px 0;color:var(--fg);font-size:15px;border-bottom:1px solid var(--line)}
+.skill-col li:last-child{border-bottom:0}
+.skill-col li .tag{float:right;color:var(--fg-faint);font-family:var(--mono);font-size:11px;letter-spacing:.08em}
+@media (max-width:820px){.skills-grid{grid-template-columns:1fr}}
+
+/* =========================================================
+   CERTS — clean list
+   ========================================================= */
+.cert-list{margin-top:40px}
+.cert-row{
+  display:grid;grid-template-columns:160px 1fr auto;gap:40px;align-items:center;
+  padding:22px 0;border-top:1px solid var(--line);
+}
+.cert-row:last-child{border-bottom:1px solid var(--line)}
+.cert-row .when{font-family:var(--mono);font-size:12px;color:var(--fg-faint);letter-spacing:.08em;text-transform:uppercase}
+.cert-row h4{font-size:16px;color:var(--fg);font-weight:500;letter-spacing:-.005em}
+.cert-row .by{color:var(--fg-dim);font-size:13px;margin-top:2px}
+.cert-row .ext{color:var(--fg-faint);font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+
+/* NEW: clickable certification title that opens the image */
+.cert-title{
+  display:inline-flex;align-items:center;gap:8px;
+  font:inherit;color:inherit;cursor:pointer;
+  padding:0;border:0;background:none;
+  transition:color .3s var(--ease);
+  text-align:left;
+}
+.cert-title:hover,.cert-title:focus-visible{color:var(--accent);outline:none}
+.cert-title .view-icon{
+  font-family:var(--mono);font-size:11px;color:var(--fg-faint);letter-spacing:.08em;
+  transition:color .3s var(--ease), transform .3s var(--ease);
+  display:inline-block;
+}
+.cert-title:hover .view-icon,.cert-title:focus-visible .view-icon{color:var(--accent);transform:translate(2px,-2px)}
+
+@media (max-width:780px){
+  .cert-row{grid-template-columns:1fr;gap:6px}
+  .cert-row .when{font-size:11px}
+  .cert-row .ext{display:none}
+}
+
+/* =========================================================
+   IMAGE LIGHTBOX (for certificates)
+   ========================================================= */
+.img-lightbox{
+  position:fixed;inset:0;z-index:95;display:none;align-items:center;justify-content:center;
+  padding:30px;background:rgba(11,11,12,.88);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  opacity:0;transition:opacity .35s var(--ease);
+}
+.img-lightbox.open{display:flex;opacity:1}
+.img-lightbox .frame{
+  position:relative;max-width:min(960px,94vw);
+  display:flex;flex-direction:column;gap:14px;
+  transform:translateY(20px);transition:transform .5s var(--ease);
+}
+.img-lightbox.open .frame{transform:none}
+.img-lightbox img{
+  max-width:100%;max-height:82vh;display:block;margin:0 auto;
+  background:var(--bg-soft);border:1px solid var(--line);border-radius:4px;
+  object-fit:contain;
+}
+.img-lightbox .caption{
+  display:flex;justify-content:space-between;align-items:center;gap:20px;
+  color:var(--fg-dim);font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+}
+.img-lightbox .caption .title{color:var(--fg)}
+.img-lightbox .close{
+  position:absolute;top:-46px;right:0;width:36px;height:36px;border-radius:50%;
+  display:grid;place-items:center;color:var(--fg-dim);
+  background:rgba(0,0,0,.35);border:1px solid var(--line);
+  transition:color .3s,background .3s,border-color .3s;
+}
+.img-lightbox .close:hover{color:var(--fg);background:rgba(255,255,255,.06);border-color:var(--line-strong)}
+.img-lightbox .loading{
+  color:var(--fg-faint);font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+  padding:40px;text-align:center;
+}
+.img-lightbox .error{
+  color:var(--fg-dim);font-family:var(--sans);font-size:14px;text-align:center;padding:40px 20px;line-height:1.6;
+  border:1px solid var(--line);border-radius:4px;background:var(--bg-soft);max-width:520px;margin:0 auto;
+}
+.img-lightbox .error code{font-family:var(--mono);font-size:12px;color:var(--accent);word-break:break-all}
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+.contact{text-align:left;padding-bottom:60px}
+.contact h2{max-width:720px}
+.contact h2 a{color:var(--accent);border-bottom:1px solid var(--accent);padding-bottom:4px;transition:opacity .3s}
+.contact h2 a:hover{opacity:.7}
+.contact .meta{margin-top:60px;display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.contact .meta .m h4{font-family:var(--mono);font-size:11px;color:var(--fg-faint);letter-spacing:.2em;text-transform:uppercase;margin-bottom:10px}
+.contact .meta .m p{color:var(--fg);font-size:15px}
+.contact .meta .m p a{border-bottom:1px solid var(--line);transition:border-color .3s}
+.contact .meta .m p a:hover{border-color:var(--accent)}
+@media (max-width:780px){.contact .meta{grid-template-columns:1fr;gap:24px}}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer{padding:40px 32px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;font-family:var(--mono);font-size:11px;color:var(--fg-faint);letter-spacing:.1em;text-transform:uppercase;position:relative;z-index:2}
+footer .sig{font-family:var(--serif);font-style:italic;font-size:16px;color:var(--fg-dim);text-transform:none;letter-spacing:0}
+
+/* =========================================================
+   REVEAL
+   ========================================================= */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .9s var(--ease), transform .9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}
+.reveal.d2{transition-delay:.16s}
+.reveal.d3{transition-delay:.24s}
+</style>
+</head>
+<body>
+
+<!-- Scroll progress, single hair-line -->
+<div class="prog"><i></i></div>
+
+<!-- Single 3D element, anchored, subtle -->
+<div id="stage"><canvas id="scene"></canvas></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <a class="mark" href="#top">Kamalsai<span class="dot">.</span></a>
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#certs">Certifications</a>
+  </div>
+  <a class="contact-link" href="#contact"><span class="dot-avail"></span> Open to roles</a>
+</nav>
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="avail"><span class="pulse"></span> Hyderabad, India · Available Q2 2026</div>
+    <h1>
+      <span class="line"><span>Kamalsai <em>Reddy</em></span></span>
+    </h1>
+    <p class="sub">
+      HR for technology teams. I run full-cycle hiring, design the candidate experience,
+      and keep the engagement work quietly doing its job so <strong>people stay and do their best work</strong>.
+    </p>
+  </div>
+  <div class="footer">
+    <div class="now"><span>Currently</span><b>Associate HR Executive I · Techdome</b></div>
+    <a class="scroll" href="#about"><i></i> Scroll</a>
+  </div>
+</section>
+
+<!-- =========================================================
+     ABOUT
+     ========================================================= -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-label reveal">
+        <span class="eyebrow">About</span>
+        <h2>A small <em>thesis</em>.</h2>
+      </div>
+      <div class="about-body reveal d1">
+        <p>I came up through a Computer Science degree and walked into HR on purpose. The tools were different; the systems thinking wasn't.</p>
+        <p class="pull">The best hires aren't found. They're <em>designed</em>.</p>
+        <p>I build hiring loops that treat candidates like adults, brief stakeholders like partners, and report the numbers without theatre. The work is boring in the best way which is how offers actually close.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     EXPERIENCE
+     ========================================================= -->
+<section id="experience">
+  <div class="wrap">
+    <div class="reveal" style="max-width:520px">
+      <span class="eyebrow">Experience</span>
+      <h2 style="margin-top:8px">Four <em>chapters</em>,<br/>written in outcomes.</h2>
+    </div>
+
+    <div class="xp-list">
+      <div class="xp-row reveal" data-xp>
+        <span class="when">2025 — Now</span>
+        <div class="title">
+          <h3>Associate HR Executive I</h3>
+          <div class="co">Techdome · Hyderabad</div>
+        </div>
+        <span class="more" aria-hidden="true">+</span>
+        <div class="details">
+          <ul>
+            <li>Owning end-to-end TA and HR Ops for the Hyderabad office.</li>
+            <li>Hiring for Product, AI/ML, Cloud, Full-Stack, BD and Founder's Office.</li>
+            <li>Sourcing across LinkedIn, Naukri, Internshala, GitHub and referrals.</li>
+            <li>Running Keka ATS as a single source of truth for hiring velocity.</li>
+            <li>Partnering with Tech Leads and Founders on JDs and interview loops.</li>
+            <li>Designing Fun Fridays and cultural rituals that people actually attend.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="xp-row reveal" data-xp>
+        <span class="when">Apr — Nov 2025</span>
+        <div class="title">
+          <h3>Talent Acquisition Consultant</h3>
+          <div class="co">Primus Global Technologies · Hyderabad</div>
+        </div>
+        <span class="more" aria-hidden="true">+</span>
+        <div class="details">
+          <ul>
+            <li>Placed IT talent across C2H, permanent, domestic and EU roles.</li>
+            <li>Handled screening, virtual interviews, salary and notice-period negotiations.</li>
+            <li>Became client POC inside four months typically a senior-only responsibility.</li>
+            <li>Shipped weekly pipeline reports with honest recommendations, not fluff.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="xp-row reveal" data-xp>
+        <span class="when">Dec 2024 — Mar 2025</span>
+        <div class="title">
+          <h3>Talent Acquisition Intern</h3>
+          <div class="co">Sansaone · European markets</div>
+        </div>
+        <span class="more" aria-hidden="true">+</span>
+        <div class="details">
+          <ul>
+            <li>Closed a first placement in month three about ₹8L in revenue for the team.</li>
+            <li>Worked across multiple EU candidate pools and timezones.</li>
+            <li>Ran sourcing, screening, negotiation and onboarding support end-to-end.</li>
+            <li>Tracked time-to-fill, cost-per-hire, and offer-accept as live KPIs.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="xp-row reveal" data-xp>
+        <span class="when">Aug 2024</span>
+        <div class="title">
+          <h3>BPM Intern</h3>
+          <div class="co">Infosys</div>
+        </div>
+        <span class="more" aria-hidden="true">+</span>
+        <div class="details">
+          <ul>
+            <li>Worked with analysts and engineers on cross-industry process audits.</li>
+            <li>Identified inefficiencies and mapped pragmatic, tech-driven fixes.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     WORK
+     ========================================================= -->
+<section id="work">
+  <div class="wrap">
+    <div class="reveal" style="max-width:520px">
+      <span class="eyebrow">Selected Work</span>
+      <h2 style="margin-top:8px">Case studies.<br/><span class="italic serif">Click to read.</span></h2>
+    </div>
+
+    <div class="work-grid">
+
+      <article class="work-card reveal" data-case="engine">
+        <div class="num">01 / Talent Engine</div>
+        <h3>An AI-augmented hiring engine for a 60-person tech org.</h3>
+        <div class="hint"><span>Read case</span><span class="arrow">↗</span></div>
+      </article>
+
+      <article class="work-card reveal" data-case="engagement">
+        <div class="num">02 / Culture</div>
+        <h3>Fun Fridays, reframed as an engagement operating system.</h3>
+        <div class="hint"><span>Read case</span><span class="arrow">↗</span></div>
+      </article>
+
+      <article class="work-card reveal" data-case="eu">
+        <div class="num">03 / Cross-border</div>
+        <h3>An EU talent pipeline, built from an intern's desk.</h3>
+        <div class="hint"><span>Read case</span><span class="arrow">↗</span></div>
+      </article>
+
+      <article class="work-card reveal" data-case="offers">
+        <div class="num">04 / Negotiation</div>
+        <h3>Offer design that reads like a narrative, not a number.</h3>
+        <div class="hint"><span>Read case</span><span class="arrow">↗</span></div>
+      </article>
+
+      <article class="work-card reveal" data-case="ai">
+        <div class="num">05 / AI × Recruiting</div>
+        <h3>Generative AI, quietly threaded through the hiring loop.</h3>
+        <div class="hint"><span>Read case</span><span class="arrow">↗</span></div>
+      </article>
+
+      <article class="work-card reveal" data-case="cs">
+        <div class="num">06 / CS Roots</div>
+        <h3>Three undergrad builds: blockchain KYC, DL, CNN.</h3>
+        <div class="hint"><span>Read case</span><span class="arrow">↗</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SKILLS
+     ========================================================= -->
+<section id="skills">
+  <div class="wrap">
+    <div class="reveal" style="max-width:520px">
+      <span class="eyebrow">Skills</span>
+      <h2 style="margin-top:8px">A short list,<br/><em>practiced often</em>.</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-col reveal">
+        <h4>Craft</h4>
+        <ul>
+          <li>Full-cycle Recruitment <span class="tag">daily</span></li>
+          <li>Stakeholder Management <span class="tag">daily</span></li>
+          <li>Offer Negotiation <span class="tag">daily</span></li>
+          <li>Interview Coordination <span class="tag">daily</span></li>
+          <li>Sourcing &amp; Headhunting <span class="tag">daily</span></li>
+        </ul>
+      </div>
+      <div class="skill-col reveal d1">
+        <h4>Tools</h4>
+        <ul>
+          <li>Keka ATS <span class="tag">fluent</span></li>
+          <li>LinkedIn Recruiter <span class="tag">fluent</span></li>
+          <li>Naukri · Resdex <span class="tag">fluent</span></li>
+          <li>ClickUp · Jira <span class="tag">comfortable</span></li>
+          <li>Power BI · Tableau <span class="tag">basics</span></li>
+        </ul>
+      </div>
+      <div class="skill-col reveal d2">
+        <h4>Adjacent</h4>
+        <ul>
+          <li>Gen-AI in Recruiting <span class="tag">practicing</span></li>
+          <li>Python · Data tools <span class="tag">CS grad</span></li>
+          <li>Employee Engagement <span class="tag">ownership</span></li>
+          <li>EU + Domestic Staffing <span class="tag">C2H + perm</span></li>
+          <li>HR Ops &amp; Documentation <span class="tag">ownership</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     CERTIFICATIONS
+     — Click any title to view the certificate image
+     ========================================================= -->
+<section id="certs">
+  <div class="wrap">
+    <div class="reveal" style="max-width:520px">
+      <span class="eyebrow">Certifications</span>
+      <h2 style="margin-top:8px">Recent <em>credentials</em>.</h2>
+      <p style="color:var(--fg-faint);font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin-top:14px">Click any title to view the certificate</p>
+    </div>
+    <div class="cert-list">
+
+      <div class="cert-row reveal">
+        <span class="when">April 2026</span>
+        <div>
+          <h4><button class="cert-title" data-img="C:\Users\KamalSaiReddy\Desktop\Certfications\Keka Emp Eng certification_page-0001.jpg">Employee Engagement <span class="view-icon" aria-hidden="true">↗</span></button></h4>
+          <div class="by">Keka Academy</div>
+        </div>
+        <span class="ext">Certificate</span>
+      </div>
+
+      <div class="cert-row reveal">
+        <span class="when">Jun 2025</span>
+        <div>
+          <h4><button class="cert-title" data-img="certifications/generative-ai.jpg">Generative AI, Recruiting &amp; Talent Acquisition <span class="view-icon" aria-hidden="true">↗</span></button></h4>
+          <div class="by">LinkedIn Learning · PMI · NASBA</div>
+        </div>
+        <span class="ext">Certificate</span>
+      </div>
+
+      <div class="cert-row reveal">
+        <span class="when">Jun 2025</span>
+        <div>
+          <h4><button class="cert-title" data-img="certifications/linkedin-recruiter.jpg">LinkedIn Recruiter <span class="view-icon" aria-hidden="true">↗</span></button></h4>
+          <div class="by">LinkedIn Learning</div>
+        </div>
+        <span class="ext">Certificate</span>
+      </div>
+
+      <div class="cert-row reveal">
+        <span class="when">May 2025</span>
+        <div>
+          <h4><button class="cert-title" data-img="certifications/naukri-maestro.jpg">Naukri Maestro Recruiter <span class="view-icon" aria-hidden="true">↗</span></button></h4>
+          <div class="by">Naukri.com</div>
+        </div>
+        <span class="ext">Certificate</span>
+      </div>
+
+      <div class="cert-row reveal">
+        <span class="when">May 2025</span>
+        <div>
+          <h4><button class="cert-title" data-img="certifications/hr-management-ohsc.jpg">HR Management <span class="view-icon" aria-hidden="true">↗</span></button></h4>
+          <div class="by">Oxford Home Study Centre</div>
+        </div>
+        <span class="ext">Certificate</span>
+      </div>
+
+      <div class="cert-row reveal">
+        <span class="when">2025</span>
+        <div>
+          <h4><button class="cert-title" data-img="certifications/hr-course-ohsc.jpg">HR Short Course <span class="view-icon" aria-hidden="true">↗</span></button></h4>
+          <div class="by">Oxford Home Study Centre</div>
+        </div>
+        <span class="ext">Short course</span>
+      </div>
+
+      <div class="cert-row reveal">
+        <span class="when">2024</span>
+        <div>
+          <h4><button class="cert-title" data-img="certifications/PDS COMPLETION CERTIFICATE.jpg">Data Science Foundations &amp; Tools <span class="view-icon" aria-hidden="true">↗</span></button></h4>
+          <div class="by">Infosys · Google</div>
+        </div>
+        <span class="ext">Programme</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     CONTACT
+     ========================================================= -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <span class="eyebrow reveal">Contact</span>
+    <h2 class="reveal d1" style="margin-top:20px">
+      If you're hiring for a team that needs someone calm, thorough, and quick
+      <a href="mailto:kamalsaireddy@gmail.com">let's talk.</a>
+    </h2>
+    <div class="meta reveal d2">
+      <div class="m"><h4>Email</h4><p><a href="mailto:kamalsaireddy@gmail.com">kamalsaireddy@gmail.com</a></p></div>
+      <div class="m"><h4>Phone</h4><p><a href="tel:+919347045285">+91 93470 45285</a></p></div>
+      <div class="m"><h4>LinkedIn</h4><p><a href="https://www.linkedin.com/in/kamal-sai-reddy/" target="_blank" rel="noreferrer">/in/kamalsaireddy-lin</a></p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="sig">Kamalsai Reddy — Hyderabad, India</span>
+  <span>© 2026</span>
+</footer>
+
+<!-- =========================================================
+     WORK MODAL
+     ========================================================= -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="sheet">
+    <button class="close" aria-label="Close">✕</button>
+    <span class="eyebrow" id="m-tag"></span>
+    <h3 id="m-title"></h3>
+    <div id="m-body"></div>
+  </div>
+</div>
+
+<!-- =========================================================
+     IMAGE LIGHTBOX (certificates)
+     ========================================================= -->
+<div class="img-lightbox" id="img-lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="frame">
+    <button class="close" aria-label="Close">✕</button>
+    <div id="lightbox-body"></div>
+    <div class="caption">
+      <span class="title" id="lightbox-title"></span>
+      <span id="lightbox-ext"></span>
+    </div>
+  </div>
+</div>
+
+<!-- =========================================================
+     LIBS
+     ========================================================= -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<script>
+/* =========================================================
+   Scroll progress + active nav
+   ========================================================= */
+(function(){
+  const bar = document.querySelector('.prog i');
+  const links = document.querySelectorAll('.nav .links a');
+  const ids = Array.from(links).map(a => a.getAttribute('href').slice(1));
+  const sections = ids.map(id => document.getElementById(id));
+  function onScroll(){
+    const h = document.documentElement;
+    const p = h.scrollTop/(h.scrollHeight - h.clientHeight);
+    bar.style.width = (p*100)+'%';
+    const y = h.scrollTop + innerHeight*0.4;
+    let active = -1;
+    sections.forEach((s,i)=>{ if(s && s.offsetTop <= y) active = i; });
+    links.forEach((a,i)=>a.classList.toggle('active', i===active));
+  }
+  addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+})();
+
+/* =========================================================
+   Reveal on scroll
+   ========================================================= */
+(function(){
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  }, {threshold:.14});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+})();
+
+/* =========================================================
+   Hero line animation
+   ========================================================= */
+(function(){
+  const line = document.querySelector('.hero h1 .line > span');
+  if(!line) return;
+  line.style.transform = 'translateY(100%)';
+  line.style.transition = 'transform 1.2s cubic-bezier(.22,1,.36,1)';
+  requestAnimationFrame(()=>{ line.style.transform = 'none'; });
+})();
+
+/* =========================================================
+   Experience expand
+   ========================================================= */
+document.querySelectorAll('[data-xp]').forEach(row=>{
+  row.addEventListener('click', ()=> row.classList.toggle('open'));
+});
+
+/* =========================================================
+   Work modal (progressive disclosure)
+   ========================================================= */
+(function(){
+  const cases = {
+    engine:{
+      tag:'Case 01 · Talent Engine',
+      title:'An AI-augmented hiring engine for a 60-person tech org.',
+      body:`
+        <p>Restructured the Techdome recruitment funnel from JD intake through offer rollout.
+        Keka ATS became the single source of truth; scorecards replaced vibes; candidate updates moved from "I'll check and get back" to a real SLA.</p>
+        <p>Stakeholders are briefed once and aligned. Sourcing happens across LinkedIn, Naukri, Internshala, GitHub and referrals weighted by channel signal, not ritual.</p>
+        <div class="metrics">
+          <div class="m"><span class="n">~40%</span><span class="l">Faster time to first interview</span></div>
+          <div class="m"><span class="n">~30%</span><span class="l">Improvement in offer-to-join</span></div>
+          <div class="m"><span class="n">5+</span><span class="l">Role families covered</span></div>
+        </div>
+        <div class="tools"><span>Keka ATS</span><span>LinkedIn Recruiter</span><span>Naukri RPS</span><span>GitHub sourcing</span><span>Scorecards</span></div>
+      `
+    },
+    engagement:{
+      tag:'Case 02 · Culture',
+      title:'Fun Fridays, reframed as an engagement operating system.',
+      body:`
+        <p>Engagement work tends to collapse into party planning. I wrote a thin framework: recurring rituals, festival moments, recognition pulses  low-cost, high-return, and consistent enough to be a habit.</p>
+        <p>Internally recognised with <em>Rockstar Rookie</em> and <em>Team Player</em> for owning the Hyderabad office rhythm.</p>
+        <div class="tools"><span>Culture OS</span><span>Events</span><span>Recognition</span><span>Retention</span></div>
+      `
+    },
+    eu:{
+      tag:'Case 03 · Cross-border',
+      title:'An EU talent pipeline, built from an intern\u2019s desk.',
+      body:`
+        <p>During the Sansaone engagement I sourced across multiple EU candidate pools handling cultural nuance, language, timezones and very different negotiation styles.</p>
+        <p>First placement closed in month three and generated ~₹8 lakh in revenue; this is typically a senior-only milestone.</p>
+        <div class="tools"><span>EU staffing</span><span>Cross-cultural ops</span><span>Timezone choreography</span></div>
+      `
+    },
+    offers:{
+      tag:'Case 04 · Negotiation',
+      title:'Offer design that reads like a narrative, not a number.',
+      body:`
+        <p>Offers that arrive as a PDF with a number do not close. I rewrote the rollout as a short conversation: context on the team, framing of the cash, a path on the notice period, and an honest answer to "why us".</p>
+        <p>Result: fewer drop-offs, cleaner negotiations, and a better brand impression on people who said no.</p>
+        <div class="tools"><span>Comp strategy</span><span>Negotiation</span><span>Onboarding</span></div>
+      `
+    },
+    ai:{
+      tag:'Case 05 · AI × Recruiting',
+      title:'Generative AI, quietly threaded through the hiring loop.',
+      body:`
+        <p>Backed by the LinkedIn Learning / PMI / NASBA certification in Generative AI for Recruiting, I use LLMs in small, specific places: JD refinement, first-pass outreach personalization, and candidate qualification prompts.</p>
+        <p>The goal isn't to automate recruiting; it's to free up the hour a day that matters the conversation.</p>
+        <div class="tools"><span>Prompting</span><span>Outreach</span><span>JD craft</span></div>
+      `
+    },
+    cs:{
+      tag:'Case 06 · CS roots',
+      title:'Three undergrad builds.',
+      body:`
+        <p><em>Enabling Trust &amp; Privacy in e-KYC, with Blockchain</em> a decentralised identity system with a dynamic access-policy algorithm for authorisation updates.</p>
+        <p><em>Air-pollution prediction with Deep Learning</em> a model over historical air-quality and meteorological data, designed for early-warning systems.</p>
+        <p><em>Forest-fire detection with a CNN</em> 92% accuracy on satellite imagery; reduced false positives by 15% and meaningfully sped up disaster response.</p>
+        <p>These projects are why technical teams hear me out. I don't pretend to ship code today but I speak engineer fluently, which is how offers actually close.</p>
+      `
+    }
+  };
+
+  const modal = document.getElementById('modal');
+  const mTag = document.getElementById('m-tag');
+  const mTitle = document.getElementById('m-title');
+  const mBody = document.getElementById('m-body');
+
+  function open(key){
+    const c = cases[key]; if(!c) return;
+    mTag.textContent = c.tag;
+    mTitle.textContent = c.title;
+    mBody.innerHTML = c.body;
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden','false');
+    document.body.style.overflow='hidden';
+  }
+  function close(){
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+  }
+  document.querySelectorAll('[data-case]').forEach(el=>{
+    el.addEventListener('click', ()=>open(el.dataset.case));
+  });
+  modal.addEventListener('click', e=>{ if(e.target===modal) close(); });
+  modal.querySelector('.close').addEventListener('click', close);
+  addEventListener('keydown', e=>{ if(e.key==='Escape') close(); });
+})();
+
+/* =========================================================
+   Certificate image lightbox
+   Click any .cert-title to open its image in the lightbox.
+   Handles loading and graceful error if image missing.
+   ========================================================= */
+(function(){
+  const box   = document.getElementById('img-lightbox');
+  const body  = document.getElementById('lightbox-body');
+  const tEl   = document.getElementById('lightbox-title');
+  const extEl = document.getElementById('lightbox-ext');
+  if(!box) return;
+
+  function openImage(src, title, ext){
+    tEl.textContent = title || '';
+    extEl.textContent = ext || '';
+    body.innerHTML = '<div class="loading">Loading…</div>';
+
+    const img = new Image();
+    img.alt = title || 'Certificate';
+    img.onload = () => { body.innerHTML = ''; body.appendChild(img); };
+    img.onerror = () => {
+      body.innerHTML = `
+        <div class="error">
+          Couldn't load this image. Make sure the file exists at
+          <br/><code>${src}</code>
+          <br/><br/>Place your certificate images in a <code>certifications/</code>
+          folder next to this HTML file with the exact filenames below.
+        </div>`;
+    };
+    img.src = src;
+
+    box.classList.add('open');
+    box.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+  }
+  function close(){
+    box.classList.remove('open');
+    box.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+    // clear the img after transition so memory is freed
+    setTimeout(()=>{ body.innerHTML = ''; }, 400);
+  }
+
+  document.querySelectorAll('.cert-title').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const src   = btn.getAttribute('data-img');
+      const row   = btn.closest('.cert-row');
+      const title = btn.childNodes[0] ? btn.childNodes[0].textContent.trim() : btn.textContent.trim();
+      const ext   = row ? (row.querySelector('.ext')?.textContent || '') : '';
+      openImage(src, title, ext);
+    });
+  });
+
+  box.addEventListener('click', e => { if(e.target === box) close(); });
+  box.querySelector('.close').addEventListener('click', close);
+  addEventListener('keydown', e => { if(e.key === 'Escape' && box.classList.contains('open')) close(); });
+})();
+
+/* =========================================================
+   3D SCENE — ONE object. Subtle. Quiet.
+   Slow-rotating matte wireframe sphere with soft fill.
+   Responds gently to cursor.
+   ========================================================= */
+(function(){
+  const canvas = document.getElementById('scene');
+  if(!canvas) return;
+  const renderer = new THREE.WebGLRenderer({canvas, antialias:true, alpha:true});
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+
+  const scene = new THREE.Scene();
+  const cam = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
+  cam.position.set(0, 0, 6);
+
+  // Soft filled sphere (matte, near-bg color)
+  const fill = new THREE.Mesh(
+    new THREE.SphereGeometry(1.6, 64, 64),
+    new THREE.MeshBasicMaterial({color:0x0f0f11, transparent:true, opacity:.85})
+  );
+  scene.add(fill);
+
+  // Wireframe outer shell — subtle, single accent
+  const wire = new THREE.Mesh(
+    new THREE.IcosahedronGeometry(1.62, 3),
+    new THREE.MeshBasicMaterial({color:0xd4a574, wireframe:true, transparent:true, opacity:.18})
+  );
+  scene.add(wire);
+
+  // A second, larger, even fainter shell for depth
+  const ghost = new THREE.Mesh(
+    new THREE.IcosahedronGeometry(1.9, 2),
+    new THREE.MeshBasicMaterial({color:0xeceae5, wireframe:true, transparent:true, opacity:.05})
+  );
+  scene.add(ghost);
+
+  // A single ring (horizon line), rotated
+  const ring = new THREE.Mesh(
+    new THREE.RingGeometry(2.35, 2.36, 128),
+    new THREE.MeshBasicMaterial({color:0xd4a574, transparent:true, opacity:.22, side:THREE.DoubleSide})
+  );
+  ring.rotation.x = Math.PI*0.42;
+  scene.add(ring);
+
+  function resize(){
+    const rect = canvas.parentElement.getBoundingClientRect();
+    renderer.setSize(rect.width, rect.height, false);
+    cam.aspect = rect.width/rect.height;
+    cam.updateProjectionMatrix();
+  }
+  addEventListener('resize', resize);
+  resize();
+
+  let tmx=0, tmy=0, mx=0, my=0;
+  addEventListener('mousemove', e=>{
+    tmx = (e.clientX/innerWidth - 0.5);
+    tmy = (e.clientY/innerHeight - 0.5);
+  });
+
+  let scrollY = 0;
+  addEventListener('scroll', ()=>{ scrollY = window.scrollY; }, {passive:true});
+
+  const clock = new THREE.Clock();
+  function render(){
+    const t = clock.getElapsedTime();
+    mx += (tmx - mx) * 0.05;
+    my += (tmy - my) * 0.05;
+
+    const docH = document.documentElement.scrollHeight - innerHeight;
+    const p = docH>0 ? scrollY/docH : 0;
+
+    // slow rotations — nothing spinny or distracting
+    wire.rotation.y = t*0.06 + mx*0.6;
+    wire.rotation.x = t*0.04 + my*0.4;
+    ghost.rotation.y = -t*0.03 + mx*0.3;
+    ghost.rotation.x = t*0.02 + my*0.2;
+    ring.rotation.z = t*0.08;
+
+    // light drift on scroll
+    scene.position.y = p*0.6;
+    cam.position.z = 6 + p*1.8;
+    cam.lookAt(0,0,0);
+
+    renderer.render(scene, cam);
+    requestAnimationFrame(render);
+  }
+  render();
+})();
+</script>
+</body>
+</html>
