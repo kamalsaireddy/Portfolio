@@ -17,7 +17,6 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://kamalsaireddy.github.io/Portfolio/og-image.png" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0c'/%3E%3Ctext x='29' y='46' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='40' fill='%23eceae5'%3EK%3C/text%3E%3Ccircle cx='47' cy='43' r='4' fill='%23d4a574'/%3E%3C/svg%3E" />
-<link rel="apple-touch-icon" href="kamalsai.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
@@ -434,10 +433,16 @@ footer .sig{font-family:var(--serif);font-style:italic;font-size:16px;color:var(
 @media (max-width:780px){.edu{grid-template-columns:1fr;gap:6px}}
 .cert-group-label{margin-top:48px;color:var(--fg-dim);font-size:14px}
 
-/* Portrait */
-.portrait{margin-top:40px;position:relative;max-width:300px;isolation:isolate}
-.portrait::before{content:"";position:absolute;inset:10% -20% 0 -20%;background:radial-gradient(closest-side, rgba(212,165,116,.22), transparent);z-index:-1}
-.portrait img{width:100%;height:auto}
+/* Desk photo */
+.desk-photo{margin-top:72px}
+.desk-photo img{width:100%;height:auto;display:block;border-radius:8px;border:1px solid var(--line-strong);filter:saturate(.92)}
+.desk-photo figcaption{margin-top:14px;color:var(--fg-dim);font-size:13px}
+@media (max-width:780px){.desk-photo{margin-top:44px}}
+
+/* Portrait (unused) */
+.portrait{margin-top:40px;position:relative;max-width:320px;isolation:isolate}
+.portrait::before{content:"";position:absolute;inset:-14%;background:radial-gradient(closest-side, rgba(212,165,116,.14), transparent);z-index:-1}
+.portrait img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid var(--line-strong);filter:saturate(.92)}
 @media (max-width:820px){.portrait{max-width:240px;margin-top:28px}}
 
 /* Roles I'm open to */
@@ -531,9 +536,6 @@ footer .sig{font-family:var(--serif);font-style:italic;font-size:16px;color:var(
       <div class="about-label reveal">
         <span class="eyebrow">About</span>
         <h2>A small <em>thesis</em>.</h2>
-        <figure class="portrait">
-          <img src="kamalsai.png" alt="Kamalsai Reddy" width="412" height="502" loading="lazy" />
-        </figure>
       </div>
       <div class="about-body reveal d1">
         <p>I studied Computer Science and moved into HR on purpose. The tools changed; the systems thinking didn't.</p>
@@ -541,6 +543,10 @@ footer .sig{font-family:var(--serif);font-style:italic;font-size:16px;color:var(
         <p>Today my work has two halves. I close senior and management hires, and I run the HR operations that make a new hire's first day, and every day after it, actually work. I report the numbers plainly and write processes down so anyone can run them.</p>
       </div>
     </div>
+    <figure class="desk-photo reveal">
+      <img src="kamalsai.jpg" alt="Kamalsai Reddy working at his desk at Techdome" width="1600" height="1069" loading="lazy" />
+      <figcaption>At my desk at Techdome, Hyderabad</figcaption>
+    </figure>
   </div>
 </section>
 
